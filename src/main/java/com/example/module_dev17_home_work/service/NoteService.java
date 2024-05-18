@@ -1,14 +1,13 @@
-package com.example.module_dev16_home_work.service;
+package com.example.module_dev17_home_work.service;
 
-import com.example.module_dev16_home_work.entity.Note;
-import com.example.module_dev16_home_work.repository.NoteRepository;
+import com.example.module_dev17_home_work.entity.Note;
+import com.example.module_dev17_home_work.repository.NoteRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
+
 @Service
 @Slf4j
 public class NoteService {

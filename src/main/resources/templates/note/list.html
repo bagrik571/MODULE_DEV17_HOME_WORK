@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <title> Notes </title>
     <meta charset="utf-8">
@@ -73,6 +73,10 @@
     }
 </style>
 <body>
+<h3 th:inline="text">Welcome <span sec:authentication="principal.username"></span></h3>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Logout" />
+</form>
 <div class="container">
     <h2> Notes </h2>
 
